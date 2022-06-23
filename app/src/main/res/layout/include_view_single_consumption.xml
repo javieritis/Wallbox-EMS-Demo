@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:layout_centerHorizontal="true"
+    android:layout_gravity="center">
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/progressbarConsumption"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:indeterminate="false"
+        android:max="100"
+        app:indicatorColor="@color/green_500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:progress="20" />
+
+    <ImageView
+        android:id="@+id/imageConsumption"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/progressbarConsumption"
+        app:layout_constraintEnd_toEndOf="@+id/progressbarConsumption"
+        app:layout_constraintStart_toStartOf="@+id/progressbarConsumption"
+        app:layout_constraintTop_toTopOf="@+id/progressbarConsumption"
+        app:tint="@color/white"
+        tools:src="@drawable/ic_pv" />
+
+    <TextView
+        android:id="@+id/progressConsumption"
+        style="@style/HeeboMedium"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/progressbarConsumption"
+        app:layout_constraintStart_toStartOf="@+id/progressbarConsumption"
+        app:layout_constraintTop_toBottomOf="@+id/progressbarConsumption"
+        tools:text="25%" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

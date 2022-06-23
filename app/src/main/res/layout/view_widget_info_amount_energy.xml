@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="0dp"
+    app:cardBackgroundColor="@color/gray_dark"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="0dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/titleInfoAmount"
+            style="@style/HeeboMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/energy_discharged" />
+
+        <TextView
+            android:id="@+id/descriptionInfoAmount"
+            style="@style/HeeboBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titleInfoAmount"
+            tools:text="500" />
+
+        <TextView
+            android:id="@+id/suffix"
+            style="@style/HeeboBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="@string/kwh"
+            android:textColor="@color/green_500"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/descriptionInfoAmount"
+            app:layout_constraintStart_toEndOf="@+id/descriptionInfoAmount"
+            app:layout_constraintTop_toTopOf="@+id/descriptionInfoAmount" />
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginBottom="4dp"
+            android:src="@drawable/ic_energy"
+            app:layout_constraintBottom_toBottomOf="@+id/suffix"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:tint="@color/green_500" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

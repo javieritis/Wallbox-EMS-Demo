@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Wallbox EMS Demo</string>
+    <string name="kwh" translatable="false">kWh</string>
+    <string name="connected">Conectado</string>
+    <string name="disconnected">Desconectado</string>
+    <string name="energy_discharged">Energía descargada</string>
+    <string name="energy_charged">Energía cargada</string>
+    <plurals name="filter_time_title">
+        <item quantity="one">Información sobre la última hora</item>
+        <item quantity="other">Información sobre las últimas %d horas</item>
+    </plurals>
+    <string name="current_building_demand">Demanda actual del edificio</string>
+    <string name="current_consumption">Consumo actual</string>
+    <string name="building_demand">Demanda del edificio</string>
+    <string name="solar_panel_power">Energía del panel solar</string>
+    <string name="grid_power">Energía consuma de la red</string>
+    <string name="card_being_charged">El coche se está cargando</string>
+    <string name="card_being_discharged">Se está descargando para cubrir la demanda del edificio</string>
+    <string name="battery">Batería</string>
+    <string name="chart">Gráfica</string>
+    <string name="charger">Cargador</string>
+    <string name="consumption">Consumo</string>
+    <string name="consumption_chart">Gráfica de consumo</string>
+</resources>

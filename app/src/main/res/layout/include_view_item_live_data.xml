@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray_dark"
+    android:padding="8dp">
+
+    <View
+        android:id="@+id/point"
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bg_circle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/titleConsumptionLiveData"
+        style="@style/HeeboBold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/current_building_demand"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toEndOf="@+id/point"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iconConsumptionLiveData"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="32dp"
+        android:src="@drawable/ic_house"
+        app:layout_constraintBottom_toBottomOf="@+id/containerValueConsumption"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/titleConsumptionLiveData"
+        app:tint="@color/green_500" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/containerValueConsumption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@+id/titleConsumptionLiveData"
+        app:layout_constraintTop_toBottomOf="@+id/titleConsumptionLiveData">
+
+        <TextView
+            android:id="@+id/valueDemand"
+            style="@style/HeeboBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            tools:text="500" />
+
+        <TextView
+            android:id="@+id/suffix"
+            style="@style/HeeboBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="@string/kwh"
+            android:textColor="@color/green_500"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/valueDemand"
+            app:layout_constraintStart_toEndOf="@+id/valueDemand"
+            app:layout_constraintTop_toTopOf="@+id/valueDemand" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.70" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="34dp"
+        android:background="@color/green_500"
+        app:layout_constraintBottom_toBottomOf="@+id/iconConsumptionLiveData"
+        app:layout_constraintEnd_toEndOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/iconConsumptionLiveData" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

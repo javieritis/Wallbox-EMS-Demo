@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Wallbox EMS Demo</string>
+    <string name="kwh" translatable="false">kWh</string>
+    <string name="connected">Connected</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="energy_discharged">Energy discharged</string>
+    <string name="energy_charged">Energy charged</string>
+    <plurals name="filter_time_title">
+        <item quantity="one">Data about last hour</item>
+        <item quantity="other">Data about last %d hours</item>
+    </plurals>
+    <string name="current_building_demand">Current building demand</string>
+    <string name="current_consumption">Current consumption</string>
+    <string name="building_demand">Building demand</string>
+    <string name="solar_panel_power">Solar power panel</string>
+    <string name="grid_power">Power consumed from the Grid</string>
+    <string name="card_being_charged">The car are being charged</string>
+    <string name="card_being_discharged">Is discharging to supply the building demand.</string>
+    <string name="battery">Battery</string>
+    <string name="chart">Chart</string>
+    <string name="charger">Charger</string>
+    <string name="consumption">Consumption</string>
+    <string name="consumption_chart">Consumption chart</string>
+</resources>

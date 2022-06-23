@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_700"
+    tools:context=".screens.dashboard.DashboardActivity">
+
+    <include
+        android:id="@+id/layoutPlaceholder"
+        layout="@layout/view_dashboard_activity_loading"
+        tools:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/mainContentDashboard"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+            <com.wallbox.ems.demo.widgets.WidgetInfoCharger
+                android:id="@+id/widgetInfoCharger"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp" />
+
+            <com.wallbox.ems.demo.widgets.WidgetLiveData
+                android:id="@+id/widgetLiveData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp" />
+
+            <TextView
+                android:id="@+id/headerFilterTime"
+                style="@style/HeeboBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/green_500"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Datos de las últimas 6 horas" />
+
+            <RadioGroup
+                android:id="@+id/containerButtonFilterTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:checkedButton="@id/filterTimeLastHour"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.wallbox.ems.demo.widgets.FilledRadioButton
+                    android:id="@+id/filterTimeLastHour"
+                    style="@style/MyCustomRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_marginEnd="12dp"
+                    android:minWidth="70dp"
+                    android:text="1h" />
+
+                <com.wallbox.ems.demo.widgets.FilledRadioButton
+                    android:id="@+id/filterTimeLast6Hours"
+                    style="@style/MyCustomRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_marginEnd="12dp"
+                    android:minWidth="70dp"
+                    android:text="6h" />
+
+                <com.wallbox.ems.demo.widgets.FilledRadioButton
+                    android:id="@+id/filterTimeLast12Hours"
+                    style="@style/MyCustomRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_marginEnd="12dp"
+                    android:minWidth="70dp"
+                    android:text="12h" />
+
+                <com.wallbox.ems.demo.widgets.FilledRadioButton
+                    android:id="@+id/filterTimeLast24Hours"
+                    style="@style/MyCustomRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_marginEnd="12dp"
+                    android:minWidth="70dp"
+                    android:text="24h" />
+
+            </RadioGroup>
+
+            <com.wallbox.ems.demo.widgets.WidgetBuildingConsumption
+                android:id="@+id/widgetBuildingConsumption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="32dp"
+                android:orientation="horizontal">
+
+                <com.wallbox.ems.demo.widgets.WidgetInfoAmountEnergy
+                    android:id="@+id/widgetAmountDischarged"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="4dp"
+                    android:layout_weight="1"
+                    app:amountType="discharged" />
+
+                <com.wallbox.ems.demo.widgets.WidgetInfoAmountEnergy
+                    android:id="@+id/widgetAmountCharged"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_weight="1"
+                    app:amountType="charged" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

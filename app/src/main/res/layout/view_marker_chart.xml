@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootMarker"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_view_marker"
+    tools:ignore="Overdraw">
+
+    <TextView
+        android:id="@+id/titleMarketChart"
+        style="@style/HeeboBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:padding="4dp"
+        android:textSize="12sp"
+        tools:text="12:30" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvItemsChart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleMarketChart"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:itemCount="4"
+        tools:listitem="@layout/view_item_marker_chart" />
+
+</RelativeLayout>

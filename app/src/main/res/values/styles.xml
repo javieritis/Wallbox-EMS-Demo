@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="HeeboRegular">
+        <item name="android:fontFamily">@font/heebo_400</item>
+    </style>
+
+    <style name="HeeboMedium">
+        <item name="android:fontFamily">@font/heebo_500</item>
+    </style>
+
+    <style name="HeeboBold">
+        <item name="android:fontFamily">@font/heebo_800</item>
+    </style>
+
+    <style name="TitleHeebo" parent="HeeboBold">
+        <item name="android:textSize">16sp</item>
+        <item name="lineSpacing">1px</item>
+    </style>
+
+    <style name="DescriptionHeebo" parent="HeeboRegular">
+        <item name="android:textSize">16sp</item>
+        <item name="lineSpacing">1px</item>
+    </style>
+
+    <style name="MyCustomRadioButton" parent="@android:style/TextAppearance">
+        <item name="android:paddingStart">6dp</item>
+        <item name="android:paddingEnd">6dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@drawable/selectable_text_color_checked_state</item>
+        <item name="android:background">@drawable/selectable_text_bg_color_checked_state</item>
+        <item name="android:fontFamily">@font/heebo_regular</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/javie/Documents/projects/Wallbox-EMS-Demo/app/src/main/res/drawable/bg_circle.xml" value="0.4305" />
+        <entry key="..\:/Users/javie/Documents/projects/Wallbox-EMS-Demo/app/src/main/res/drawable/bg_gradient_green.xml" value="0.4185" />
+        <entry key="..\:/Users/javie/Documents/projects/Wallbox-EMS-Demo/app/src/main/res/drawable/button_rounded_main_gradient_enabled_state.xml" value="0.303" />
+        <entry key="..\:/Users/javie/Documents/projects/Wallbox-EMS-Demo/app/src/main/res/drawable/disable_button_rounded_main_gradient.xml" value="0.303" />
+        <entry key="..\:/Users/javie/Documents/projects/Wallbox-EMS-Demo/app/src/main/res/drawable/enable_button_rounded_main_gradient.xml" value="0.303" />
+        <entry key="..\:/Users/javie/Documents/projects/Wallbox-EMS-Demo/app/src/main/res/drawable/ic_arrow_down.xml" value="0.393" />
+        <entry key="..\:/Users/javie/Documents/projects/Wallbox-EMS-Demo/app/src/main/res/drawable/ic_wallbox.xml" value="0.393" />
+        <entry key="..\:/Users/javie/Documents/projects/Wallbox-EMS-Demo/app/src/main/res/drawable/selectable_text_bg_color_checked_state.xml" value="0.303" />
+        <entry key="..\:/Users/javie/Documents/projects/Wallbox-EMS-Demo/app/src/main/res/drawable/selectable_text_color_checked_state.xml" value="0.303" />
+        <entry key="..\:/Users/javie/Documents/projects/Wallbox-EMS-Demo/app/src/main/res/drawable/selected_bg_text_item.xml" value="0.303" />
+        <entry key="..\:/Users/javie/Documents/projects/Wallbox-EMS-Demo/app/src/main/res/drawable/unselected_bg_text_item.xml" value="0.303" />
+        <entry key="..\:/Users/javie/Documents/projects/Wallbox-EMS-Demo/app/src/main/res/font/heebo_400.xml" value="0.46923076923076923" />
+        <entry key="..\:/Users/javie/Documents/projects/Wallbox-EMS-Demo/app/src/main/res/font/heebo_500.xml" value="0.4700854700854701" />
+        <entry key="..\:/Users/javie/Documents/projects/Wallbox-EMS-Demo/app/src/main/res/font/heebo_800.xml" value="0.4700854700854701" />
+        <entry key="..\:/Users/javie/Documents/projects/Wallbox-EMS-Demo/app/src/main/res/layout/activity_chart.xml" value="0.30416666666666664" />
+        <entry key="..\:/Users/javie/Documents/projects/Wallbox-EMS-Demo/app/src/main/res/layout/activity_dashboard.xml" value="0.41096866096866097" />
+        <entry key="..\:/Users/javie/Documents/projects/Wallbox-EMS-Demo/app/src/main/res/layout/include_view_item_live_data.xml" value="0.8333333333333334" />
+        <entry key="..\:/Users/javie/Documents/projects/Wallbox-EMS-Demo/app/src/main/res/layout/include_view_single_consumption.xml" value="0.25" />
+        <entry key="..\:/Users/javie/Documents/projects/Wallbox-EMS-Demo/app/src/main/res/layout/view_widget_amount_indicator.xml" value="0.5" />
+        <entry key="..\:/Users/javie/Documents/projects/Wallbox-EMS-Demo/app/src/main/res/layout/view_widget_building_consumption.xml" value="0.6" />
+        <entry key="..\:/Users/javie/Documents/projects/Wallbox-EMS-Demo/app/src/main/res/layout/view_widget_info_amount_energy.xml" value="0.6" />
+        <entry key="..\:/Users/javie/Documents/projects/Wallbox-EMS-Demo/app/src/main/res/layout/view_widget_info_charger.xml" value="0.44529914529914527" />
+        <entry key="..\:/Users/javie/Documents/projects/Wallbox-EMS-Demo/app/src/main/res/layout/view_widget_live_data.xml" value="0.6141672946495855" />
+        <entry key="..\:/Users/javie/Documents/projects/Wallbox-EMS-Demo/app/src/main/res/layout/view_widget_progress_indicator.xml" value="0.22" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
