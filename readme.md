@@ -35,7 +35,7 @@ I have created some UseCases classes, which allow operations such as obtaining t
 
 ### Widgets
 <p align="center">
-<img src="images/widget_info_charger.png" width="150"/>
+<img src="images/widget_info_charger.PNG" width="150"/>
 </p>
 - Widget with charger info. This widget is complementary, only offer info about the charger connected (fake).
 
@@ -43,7 +43,7 @@ I have created some UseCases classes, which allow operations such as obtaining t
 <br/>
 
 <p align="center">
-<img src="images/widget_live_data.png" width="150"/>
+<img src="images/widget_live_data.PNG" width="150"/>
 </p>
 - Live data widget. I used the live data json to fill this widget, and i show the data of the sources in it, with the values in kWh. The vehicle battery percentage is displayed in percentage.
 
@@ -51,7 +51,7 @@ I have created some UseCases classes, which allow operations such as obtaining t
 <br/>
 
 <p align="center">
-<img src="images/widget_statistics.png" width="150"/>
+<img src="images/widget_statistics.PNG" width="150"/>
 </p>
 - Statistics data widget. In this widget, the values are displayed as percentages of the data history by date filter.
 Implementing these date filters has been a decision to not handle a large amount of data and to be able to visualize the information better in a short period of time.
@@ -61,7 +61,7 @@ To obtain the percentages, first i obtain the items into date range, next i calc
 <br/>
 
 <p align="center">
-<img src="images/widget_charged_discharged.png" width="150"/>
+<img src="images/widget_charged_discharged.PNG" width="150"/>
 </p>
 - Amount of energy discharged/charged widget. First i obtain the items into date range and if the value 'quasars_active_power' is negative or positive, it means that the car is charging, or it is providing power to the building.
 Finally, the average of that field is calculated, and multiplied by the number of hours selected in the filter.
